@@ -18,7 +18,6 @@
 
 *todo list :*
 
-- [ ] 处理`FilePurgeQueue`的方法：在`CompactionService::execute_compaction_task()`中，我想通过将`ExecuteCompactionTaskRequest`转化为`CompactionRunnerTask`，然后直接调用`LocalCompactionRunner`来执行，但在`FilePurgeQueue`的类型转化上遇到了困难，暂未找到处理方法。
 - [ ] *feat: enable to deploy the compaction server.*
   - [ ] *完善[HoraeDB Cluster Deployment Doc](https://horaedb.apache.org/cluster_deployment/with_meta.html#run-horaedb-cluster-with-horaemeta)*
   - [ ] *在HoraeDB中添加`docs/example-cluster-3.toml`来展示如何部署compaction server*
@@ -30,4 +29,5 @@
 - （待实现）向HoraeMeta申请cs结点
 - 通过client实现compaction offload
 
-- [ ] *todo: client实现部分也涉及type conversation，计划解决上述`FilePurgeQueue`后再实现*
+- [ ] *todo: client实现部分也涉及type conversation，计划在实现remote compaction runner时完成*
+
